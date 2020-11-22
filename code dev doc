@@ -1,0 +1,12 @@
+Doc for how to implement... 
+
+1) a new object
+
+2) a new DOM control 
+
+
+[1] Considerations: mainly, to enable save and load to work with new object. When json loads, it basically gives instructions about which objects to newly instantiate, including their properties, which are then pushed onto the main plats[] array.
+
+Also need to make sure we can add the new object in editor - at time of writing, we access new objects with 'o'; we need to add a DOM element, such as a drop down list, to provide this functionality too.
+
+***ADDING NEW OBJ CLASS*** List of things to do: create new class for obj (remember to include rect outline for editor selection etc. indicator); update load and save; update cloning tool in editor_input.js; previewPlat() in sketch.js; update placePlat() in editor_input.js; keyPressed() in editor_input.js (just increase number of objects we have, before looping back to 0); does your new obj use op (original positions?) -- update these in levelReset() in editor_input.js.
